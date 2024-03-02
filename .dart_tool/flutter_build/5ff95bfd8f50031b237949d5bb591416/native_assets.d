@@ -1,0 +1,1 @@
+ C:\\Users\\kukre\\StudioProjects\\atman\\.dart_tool\\flutter_build\\5ff95bfd8f50031b237949d5bb591416\\native_assets.yaml: 

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1041504970227",
+    "project_id": "atman-mobile",
+    "storage_bucket": "atman-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1041504970227:android:753df612607b7105225e86",
+        "android_client_info": {
+          "package_name": "com.example.atman"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp7QiFWZORFdOUq6QxdMpi2E_CxCWu3Tk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
