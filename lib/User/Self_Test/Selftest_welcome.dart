@@ -1,10 +1,10 @@
 
-import 'package:atman/Fonts/helveticaFont.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'Selftest_02.dart';
 
+import '../../Fonts/helveticaFont.dart';
+import 'Selftest_02.dart';
 
 class SelfTest01 extends StatefulWidget {
   const SelfTest01({super.key});
@@ -57,19 +57,20 @@ class _SelfTest01State extends State<SelfTest01> {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const Helvetica(text:"Self Test",size: 25,
+                Helvetica(text:"Self Test",size: 25,
                     color:  Color(0xffD3A3F1),
                     weight: FontWeight.w600
                 ),
                 SizedBox(height: 12.h,),
                 Container(
-                    alignment: Alignment.center,
-                    padding: EdgeInsets.symmetric(horizontal: 24.w),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.symmetric(horizontal: 24.w),
                     child: const Helvetica(text:"This self-test is designed to provide you with insights into various aspects of your mental and emotional well-being",
-                        alignment: TextAlign.center,
-                                                 size: 19,
-                          weight: FontWeight.w500,
-                        ),),
+                      alignment: TextAlign.center,
+                      size: 19,
+                      weight: FontWeight.w500,
+                      maxlines: 20,
+                    ),),
                 const Spacer(),
                 SizedBox(
                   width: 295.w,
@@ -89,15 +90,14 @@ class _SelfTest01State extends State<SelfTest01> {
                       );
 
                     },
-                    child: const Helvetica(
-                      text:'Next',
-                          color: Colors.black,
-                          size: 16,
-                          weight: FontWeight.normal
-                      ),
+                    child:  const Helvetica(
+                        text:'Next',
+                        color: Colors.black,
+                        size: 16,
+                        weight: FontWeight.normal
                     ),
                   ),
-
+                ),
               ],
             ),
           ),

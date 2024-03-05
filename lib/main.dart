@@ -14,7 +14,6 @@ import 'package:atman/Psychologist/SignIn-SignUp/SignUp%20Screen/details.dart';
 import 'package:atman/Psychologist/SignIn-SignUp/SignUp%20Screen/signup.dart';
 import 'package:atman/User/CopingTechniques/Coping_techs01.dart';
 import 'package:atman/User/CopingTechniques/Coping_techs_List.dart';
-import 'package:atman/User/CopingTechniques/Strat_Page.dart';
 import 'package:atman/User/Self_Test/Selftest_02.dart';
 import 'package:atman/User/graphPage/graph_page.dart';
 import 'package:atman/User/my_profile.dart';

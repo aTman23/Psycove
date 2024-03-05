@@ -21,7 +21,7 @@ class WelcomeScreen extends StatelessWidget {
             ),
             Helvetica(text: "Welcome to", size: 30, weight: FontWeight.w700,color: Colors.white,),
             Helvetica(text: "ATMAN", size: 35, weight: FontWeight.w700,color: Color(0xFFD3A3F1,),),
-            Helvetica(text:  '"bridging the gap between you and your innerself"', size: 20, weight: FontWeight.w500,color: Colors.white,),
+            Helvetica(text:  '"bridging the gap between you and your innerself"', size: 20, weight: FontWeight.w500,color: Colors.white,maxlines: 2,),
 
             SizedBox(
               height: 20,

@@ -1,5 +1,4 @@
 
-import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 class Message {
   final String text;
@@ -35,7 +34,7 @@ class PsychologyProfile {
   final String field;
   final String deals;
   final String licence;
-  final Map<DateTime, List<TimeOfDay>> Slots;
+  final Map<DateTime, List<String>> Slots;
   final bool isOnline;
 
   PsychologyProfile({
@@ -83,16 +82,16 @@ List<PsychologyProfile> details = [
       id: 01,
       Slots: {
         DateTime(2024, 1, 21): [
-          const TimeOfDay(hour: 9, minute: 0),
-          const TimeOfDay(hour: 10, minute: 30),
-          const TimeOfDay(hour: 13, minute: 0),
-          const TimeOfDay(hour: 15, minute: 30),
-          const TimeOfDay(hour: 18, minute: 0),
+          '8:00 AM',
+          '9:00 AM',
+          '10:00 AM',
+          '11:00 AM'
         ],
         DateTime(2024, 1, 22): [
-          const TimeOfDay(hour: 10, minute: 0),
-          const TimeOfDay(hour: 12, minute: 30),
-          const TimeOfDay(hour: 14, minute: 0),
+          '8:00 AM',
+          '9:00 AM',
+          '10:00 AM',
+          '11:00 AM'
         ],
       },
       isOnline: false),
@@ -117,16 +116,16 @@ List<PsychologyProfile> details = [
       id: 02,
       Slots: {
         DateTime(2024, 1, 21): [
-          const TimeOfDay(hour: 9, minute: 0),
-          const TimeOfDay(hour: 10, minute: 30),
-          const TimeOfDay(hour: 13, minute: 0),
-          const TimeOfDay(hour: 15, minute: 30),
-          const TimeOfDay(hour: 18, minute: 0),
+          '8:00 AM',
+          '9:00 AM',
+          '10:00 AM',
+          '11:00 AM'
         ],
         DateTime(2024, 1, 22): [
-          const TimeOfDay(hour: 10, minute: 0),
-          const TimeOfDay(hour: 12, minute: 30),
-          const TimeOfDay(hour: 14, minute: 0),
+          '8:00 AM',
+          '9:00 AM',
+          '10:00 AM',
+          '11:00 AM'
         ],
       },
       isOnline: true),
@@ -151,16 +150,16 @@ List<PsychologyProfile> details = [
       id: 03,
       Slots: {
         DateTime(2024, 1, 21): [
-          const TimeOfDay(hour: 9, minute: 0),
-          const TimeOfDay(hour: 10, minute: 30),
-          const TimeOfDay(hour: 13, minute: 0),
-          const TimeOfDay(hour: 15, minute: 30),
-          const TimeOfDay(hour: 18, minute: 0),
+          '8:00 AM',
+          '9:00 AM',
+          '10:00 AM',
+          '11:00 AM'
         ],
         DateTime(2024, 1, 22): [
-          const TimeOfDay(hour: 10, minute: 0),
-          const TimeOfDay(hour: 12, minute: 30),
-          const TimeOfDay(hour: 14, minute: 0),
+          '8:00 AM',
+          '9:00 AM',
+          '10:00 AM',
+          '11:00 AM'
         ],
       },
       isOnline: false),
@@ -185,16 +184,16 @@ List<PsychologyProfile> details = [
       id: 04,
       Slots: {
         DateTime(2024, 1, 21): [
-          const TimeOfDay(hour: 9, minute: 0),
-          const TimeOfDay(hour: 10, minute: 30),
-          const TimeOfDay(hour: 13, minute: 0),
-          const TimeOfDay(hour: 15, minute: 30),
-          const TimeOfDay(hour: 18, minute: 0),
+          '8:00 AM',
+          '9:00 AM',
+          '10:00 AM',
+          '11:00 AM'
         ],
         DateTime(2024, 1, 23): [
-          const TimeOfDay(hour: 10, minute: 0),
-          const TimeOfDay(hour: 12, minute: 30),
-          const TimeOfDay(hour: 14, minute: 0),
+          '8:00 AM',
+          '9:00 AM',
+          '10:00 AM',
+          '11:00 AM'
         ],
       },
       isOnline: true)

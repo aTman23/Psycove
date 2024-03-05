@@ -201,216 +201,24 @@ class _HomepageState extends State<Homepage> {
                             EmojiButton(
                                 emojiPath: "assets/images/joy.png",
                                 text: "Joy",
-                            list: [
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Joy/cheerful.png'),
-                                width: 42,
-                                height: 42,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Joy/Content.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Joy/Happy.png'),
-                                width: 45,
-                                height: 45,
-                              ),
 
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Joy/Optimistic.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Joy/Proud.png'),
-                                width: 40,
-                                height: 40,
-                              )
-                            ],
                             ),
 
                             EmojiButton(
                                 emojiPath: "assets/images/love.png",
-                                text: "Love",list: [
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Love/Desirous.png'),
-                                width: 40,
-                                height: 40,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Love/longing.png'),
-                                width: 35,
-                                height: 35,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Love/peaceful.png'),
-                                width: 40,
-                                height: 40,
-                              ),
-
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Love/Romantic.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Love/Tender.png'),
-                                width: 45,
-                                height: 45,
-                              )
-                            ],),
+                                text: "Love",),
                             EmojiButton(
                                 emojiPath: "assets/images/suprised.png",
-                                text: "Surprised",list: [
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Suprised/confused.png'),
-                                width: 42,
-                                height: 42,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Suprised/Moved.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Suprised/Overcome.png'),
-                                width: 40,
-                                height: 40,
-                              ),
-
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Suprised/stunned.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Fear/scared.png'),
-                                width: 45,
-                                height: 45,
-                              )
-                            ],),
+                                text: "Surprised",),
                             EmojiButton(
                                 emojiPath: "assets/images/sadness.png",
-                                text: "Sad",list: [
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Sadness/Disappointed.png'),
-                                width: 40,
-                                height: 40,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Sadness/Distressed.png'),
-                                width: 40,
-                                height: 40,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Sadness/Hopeless.png'),
-                                width: 60,
-                                height: 60,
-                              ),
-
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Sadness/Melancholic.png'),
-                                width: 35,
-                                height: 35,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Sadness/Shameful.png'),
-                                width: 45,
-                                height: 45,
-                              )
-                            ],),
+                                text: "Sad",),
                             EmojiButton(
                                 emojiPath: "assets/images/fear.png",
-                                text: "Fear",list: [
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Fear/Horrified.png'),
-                                width: 38,
-                                height: 38,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Fear/insecure.png'),
-                                width: 38,
-                                height: 38,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Fear/Nervous.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Fear/scared.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Fear/Terrified.png'),
-                                width: 45,
-                                height: 45,
-                              )
-                            ],),
+                                text: "Fear",),
                             EmojiButton(
                                 emojiPath: "assets/images/Anger.png",
-                                text: "anger",list: [
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Anger/Disgusted.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Anger/Enraged.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Anger/ENvious.png'),
-                                width: 50,
-                                height: 50,
-                              ),
-
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Anger/exaperated.png'),
-                                width: 45,
-                                height: 45,
-                              ),
-                              Image(
-                                image: AssetImage(
-                                    'assets/how_are_you_feeling/Anger/irritable.png'),
-                                width: 42,
-                                height: 42,
-                              )
-                            ],),
+                                text: "anger"),
                           ],
                         ),
                       ),
@@ -533,7 +341,7 @@ class _HomepageState extends State<Homepage> {
                 DailyChallengeContainer(
                   heading: "Coping Technique",
                   content:
-                      "Working on problem and self examination is sign of strength",
+                      "Helps in your critical times and gives strength",
                   imgPath:
                       "assets/images/3d-rendering-cartoon-like-woman-doing-yoga-PhotoRoom.png-PhotoRoom.png",
                   containerColor: const Color(0xFF8367C7),

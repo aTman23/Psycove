@@ -1,5 +1,7 @@
+
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+import 'oldNotes.dart';
 
 class DailyJournalMain extends StatefulWidget {
   const DailyJournalMain({super.key});
@@ -27,12 +29,21 @@ class _DailyJournalMainState extends State<DailyJournalMain> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {
+        onPressed: () async {
           // Navigator.pushReplacementNamed(context, '/homepage');
-          Navigator.pop(context);
-          Navigator.pop(context);
+          // Navigator.pop(context);
+          // Navigator.pop(context);
+          DateTime initDate = DateTime.now();
+          final DateTime? picker = await showDatePicker(context: context, firstDate: DateTime(2000), lastDate: DateTime.now(), initialDate: initDate,);
+          if (picker != null && picker != initDate)
+            {
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return OldNotes(date: picker);
+              }));
+            }
+
         },
-        child: const Icon(Icons.arrow_forward),
+        child: const Icon(Icons.calendar_month_rounded),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -72,10 +83,9 @@ class _DailyJournalMainState extends State<DailyJournalMain> {
                             border: OutlineInputBorder(
                                 borderSide: BorderSide.none),
                           ),
-                          style: GoogleFonts.urbanist(
-                            textStyle: const TextStyle(
+                          style: TextStyle(fontFamily: "Helvetica",
                                 fontWeight: FontWeight.w500, fontSize: 25),
-                          ),
+
                           onTap: () {
                             _focusNode.requestFocus();
                             _focusNode1.unfocus();

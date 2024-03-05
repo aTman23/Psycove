@@ -1,0 +1,1 @@
+ D:\\StudioProjects\\Psycove\\.dart_tool\\flutter_build\\8ac6ac0115f07da65bc3842673ea48c0\\native_assets.yaml: 

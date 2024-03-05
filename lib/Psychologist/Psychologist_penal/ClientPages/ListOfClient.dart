@@ -1,7 +1,7 @@
-import 'package:atman/Fonts/helveticaFont.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import '../../../Fonts/helveticaFont.dart';
 import 'ClientComponents/clientCard.dart';
 import 'SendReminderPage.dart';
 
@@ -111,7 +111,7 @@ class _ListOfClientState extends State<ListOfClient> {
               gender: "Male",
               age: "21",
               occupation: "Student",
-              timeSlot: "01:30 am To 02:30 am");
+              timeSlot: "01:30 am To 02:30 am", date: '12/03/24',);
         },
       ),
     );

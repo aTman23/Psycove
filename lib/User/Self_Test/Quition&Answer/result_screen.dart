@@ -1,45 +1,40 @@
-import 'package:atman/Fonts/helveticaFont.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-
+import '../../../Fonts/helveticaFont.dart';
 class ResultScreen extends StatefulWidget {
   final int score;
   const ResultScreen(this.score, {Key? key}) : super(key: key);
-
   @override
   State<ResultScreen> createState() => _ResultScreenState();
 }
-
 class _ResultScreenState extends State<ResultScreen> {
   @override
   Widget build(BuildContext context) {
     return PopScope(
       canPop: false,
       child: Scaffold(
-        backgroundColor: const Color(0xffF4F4F4),
+       backgroundColor: const Color(0xffF4F4F4),
         body: Center(
           child: Container(
             height: 363.h,
             width: 325.w,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: const Color(0xffD3A3F1).withOpacity(0.2),
-                border: Border.all(color: Colors.grey)
+              borderRadius: BorderRadius.circular(10),
+              color: const Color(0xffD3A3F1).withOpacity(0.2),
+              border: Border.all(color: Colors.grey)
             ),
             child:Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 SizedBox(height: 24.h,),
                 Container(
-                    margin: EdgeInsets.only(right: 10.w),
+                  margin: EdgeInsets.only(right: 10.w),
                     child: Image.asset("assets/self_test_img/boy2.png")),
                 SizedBox(height: 12.h,),
-                const Helvetica(text:"Congratulations !",
+                Helvetica(text:"Congratulations !",
                   weight: FontWeight.w600,
-                   size: 28,
-                  ),
+                  size: 28,
+                ),
                 SizedBox(height: 12.h,),
                 Container(
                   alignment: Alignment.center,
@@ -47,8 +42,9 @@ class _ResultScreenState extends State<ResultScreen> {
                   child: Helvetica(text:"Your score is ${widget.score} you doing good, keep get going in your mental well being journey.",
                     alignment: TextAlign.center,
                     weight: FontWeight.w500,
-                     size: 19,
-                    ),
+                    size: 19,
+                    maxlines: 20,
+                  ),
                 ),
                 SizedBox(height: 10.h,),
                 Container(
@@ -72,10 +68,9 @@ class _ResultScreenState extends State<ResultScreen> {
                       color: Colors.white,
                       size: 16,
                       weight: FontWeight.w600,
-                      ),
                     ),
-
-                ),
+                    ),
+                  ),
               ],
             ),
           ),

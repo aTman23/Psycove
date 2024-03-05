@@ -1,5 +1,7 @@
-import 'package:atman/Fonts/helveticaFont.dart';
+
 import 'package:flutter/material.dart';
+
+import '../../../../Fonts/helveticaFont.dart';
 import '../../Psycholigist_functions/DetailsComponents/ButtonContainer.dart';
 import '../../Psycholigist_functions/Psy_Detail.dart';
 
@@ -9,6 +11,7 @@ class ClientContainer extends StatefulWidget {
   final String age;
   final String occupation;
   final String timeSlot;
+  final String date;
   bool check;
 
   ClientContainer(
@@ -18,7 +21,7 @@ class ClientContainer extends StatefulWidget {
       required this.gender,
       required this.age,
       required this.occupation,
-      required this.timeSlot});
+      required this.timeSlot, required this.date});
 
   @override
   State<ClientContainer> createState() => _ClientContainerState();
@@ -29,7 +32,7 @@ class _ClientContainerState extends State<ClientContainer> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 30),
-      height: 250,
+      height: 260,
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/white_board.png"),
@@ -87,6 +90,29 @@ class _ClientContainerState extends State<ClientContainer> {
                     weight: FontWeight.w500,
                     alignment: TextAlign.right,
                   ),
+                  Row(
+                    children: [
+                      Helvetica(
+                        text: "Date:-",
+                        size: 16,
+                        weight: FontWeight.w500,
+                        alignment: TextAlign.right,
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        width: 100,
+                        height: 30,
+                        decoration: BoxDecoration(
+                            color: const Color(0xff8ADCFF).withOpacity(0.50),
+                            borderRadius: BorderRadius.circular(3)),
+                        child: Helvetica(
+                          text: widget.date,
+                          size: 13,
+                          weight: FontWeight.w500,
+                        ),
+                      )
+                    ],
+                  ),
                   const Helvetica(
                     text: "Time Slot:-",
                     size: 16,
@@ -130,10 +156,11 @@ class _ClientContainerState extends State<ClientContainer> {
 
 class PendingCard extends StatefulWidget {
   final String timeSlot;
+  final String date;
 
   const PendingCard({
     super.key,
-    required this.timeSlot,
+    required this.timeSlot, required this.date,
   });
 
   @override
@@ -145,7 +172,7 @@ class _PendingCardState extends State<PendingCard> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 35, horizontal: 40),
-      height: 250,
+      height: 260,
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/white_board.png"),
@@ -172,10 +199,33 @@ class _PendingCardState extends State<PendingCard> {
                   const Helvetica(
                       text: 'Hitesh Sakore', size: 18, weight: FontWeight.bold),
                   const SizedBox(
-                    height: 10,
+                    height: 5,
                   ),
                   Column(
                     children: [
+                      Row(
+                        children: [
+                          Helvetica(
+                            text: "Date:-",
+                            size: 16,
+                            weight: FontWeight.w500,
+                          ),
+                          Container(
+                            alignment: Alignment.center,
+                            width: 100,
+                            height: 30,
+                            decoration: BoxDecoration(
+                                color: const Color(0xff8ADCFF).withOpacity(0.50),
+                                borderRadius: BorderRadius.circular(3)),
+                            child: Helvetica(
+                              text: widget.date,
+                              size: 13,
+                              weight: FontWeight.w500,
+                            ),
+                          ),
+                        ],
+                      ),
+
                       const Helvetica(
                         text: "Time Slot:-",
                         size: 16,
@@ -243,6 +293,7 @@ class ApprovedCard extends StatefulWidget {
   final String age;
   final String occupation;
   final String timeSlot;
+  final String date;
 
   const ApprovedCard(
       {super.key,
@@ -250,7 +301,7 @@ class ApprovedCard extends StatefulWidget {
       required this.gender,
       required this.age,
       required this.occupation,
-      required this.timeSlot});
+      required this.timeSlot, required this.date});
 
   @override
   State<ApprovedCard> createState() => _ApprovedListState();
@@ -261,7 +312,7 @@ class _ApprovedListState extends State<ApprovedCard> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 30),
-      height: 250,
+      height: 260,
       decoration: const BoxDecoration(
         image: DecorationImage(
           image: AssetImage("assets/white_board.png"),
@@ -270,7 +321,7 @@ class _ApprovedListState extends State<ApprovedCard> {
       ),
       child: Column(
         children: [
-          const Spacer(),
+
           Row(
             children: [
               const Padding(
@@ -307,8 +358,32 @@ class _ApprovedListState extends State<ApprovedCard> {
                     weight: FontWeight.w500,
                     alignment: TextAlign.right,
                   ),
+                  Row(
+                    children: [
+                      Helvetica(
+                        text: "Date:-",
+                        size: 16,
+                        weight: FontWeight.w500,
+                        alignment: TextAlign.right,
+                      ),
+                      Container(
+                        alignment: Alignment.center,
+                        width: 100,
+                        height: 30,
+                        decoration: BoxDecoration(
+                          color: const Color(0xff8ADCFF).withOpacity(0.50),
+                          borderRadius: BorderRadius.circular(3),
+                        ),
+                        child: Helvetica(
+                          text: widget.date,
+                          size: 13,
+                          weight: FontWeight.w500,
+                        ),
+                      )
+                    ],
+                  ),
                   Helvetica(
-                    text: "Time Slot:- ${widget.timeSlot}",
+                    text: "Time Slot:-",
                     size: 16,
                     weight: FontWeight.w500,
                     alignment: TextAlign.right,

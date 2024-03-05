@@ -30,7 +30,7 @@ class _ApprovedListState extends State<ApprovedList> {
                 gender: "Male",
                 age:"21",
                 occupation: 'Student',
-                timeSlot: "01:30 pm to 02:30 pm"),
+                timeSlot: "01:30 pm to 02:30 pm", date: '12:03:24',),
           );
         });
   }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+
 import '../../Fonts/helveticaFont.dart';
 import 'Quition&Answer/quistion_page.dart';
-
 
 class SelfTest02 extends StatefulWidget {
   const SelfTest02({super.key});
@@ -64,11 +64,12 @@ class _SelfTest02State extends State<SelfTest02> {
                 Container(
                     alignment: Alignment.center,
                     padding: EdgeInsets.symmetric(horizontal: 24.w),
-                    child:  const Helvetica(text:"This self-test is designed to provide you with insights into various aspects of your mental and emotional well-being",
-                        alignment: TextAlign.center,
-                        size: 19,
-                         weight: FontWeight.w500,
-                        )),
+                    child: const Helvetica(text:"This self-test is designed to provide you with insights into various aspects of your mental and emotional well-being",
+                      alignment: TextAlign.center,
+                      size: 19,
+                      weight: FontWeight.w500,
+                      maxlines: 20,
+                    )),
                 const Spacer(),
                 SizedBox(
                   width: 295.w,
@@ -82,20 +83,19 @@ class _SelfTest02State extends State<SelfTest02> {
                       ),
                     ),
                     onPressed: () {
-                      Navigator.pushReplacement(
+                      Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => const QuistionPage()),
                       );
                     },
                     child: const Helvetica(
-                      text:'Start',
-                          color: Colors.black,
-                          size: 16,
-                          weight: FontWeight.normal
-                      ),
+                        text:'Start',
+                        color: Colors.black,
+                        size: 16,
+                        weight: FontWeight.normal
                     ),
                   ),
-
+                ),
               ],
             ),
           ),
