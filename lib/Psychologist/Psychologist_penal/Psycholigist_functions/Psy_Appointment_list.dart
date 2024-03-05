@@ -105,7 +105,7 @@ class _PsyAppointmentListState extends State<PsyAppointmentList> {
                             icon: const Icon(
                               Icons.notifications_outlined,
                               size: 30,
-                              color: Colors.white,
+                              color: Colors.black,
                             ),
                           ),
                           Positioned(

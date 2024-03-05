@@ -29,7 +29,7 @@ class DailyChallengeContainer extends StatelessWidget {
           children: [
             Flexible(
               child: Padding(
-                padding: EdgeInsets.only(left: 20, top: 20, bottom: 20),
+                padding: const EdgeInsets.only(left: 20, top: 20, bottom: 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -43,11 +43,13 @@ class DailyChallengeContainer extends StatelessWidget {
                       width: 200,
                       child: Helvetica(
                         text:content,
-                        overflow: TextOverflow.visible,
+                        overflow: TextOverflow.ellipsis,
+                        alignment: TextAlign.left,
                         size: 11,
+                          maxlines: 3,
                           weight: FontWeight.w600,
                               color: Colors.white),
-                        ),
+                    ),
 
 
                     const SizedBox(

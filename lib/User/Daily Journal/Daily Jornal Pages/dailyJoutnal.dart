@@ -1,6 +1,7 @@
-import 'package:atman/Fonts/helveticaFont.dart';
 import 'package:flutter/material.dart';
-import '../../SignIn-SignUp/Components/buttons.dart';
+
+import '../../../Fonts/helveticaFont.dart';
+import '../Components/buttons.dart';
 
 class DailyJournal extends StatelessWidget {
   const DailyJournal({super.key});

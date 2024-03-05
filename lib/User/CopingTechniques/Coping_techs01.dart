@@ -68,6 +68,7 @@ class _CopingTechs01State extends State<CopingTechs01> {
                         alignment: TextAlign.center,
                         size: 18,
                          weight: FontWeight.w500,
+                      maxlines: 4,
                         )),
                 const Spacer(),
                 SizedBox(

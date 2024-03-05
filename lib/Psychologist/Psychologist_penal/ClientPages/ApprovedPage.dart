@@ -72,6 +72,7 @@ class _ApprovedPageState extends State<ApprovedPage> {
                     IconButton(
                       icon: const Icon(
                         Icons.arrow_back_ios_new_outlined,
+                        color: Colors.black,
                         size: 30,
                       ),
                       onPressed: () {
@@ -95,7 +96,7 @@ class _ApprovedPageState extends State<ApprovedPage> {
                           icon: const Icon(
                             Icons.notifications_outlined,
                             size: 30,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                         Positioned(
@@ -158,9 +159,9 @@ class _ApprovedPageState extends State<ApprovedPage> {
 
                       },
                       icon: const Icon(
-                        Icons.watch_later,
+                        Icons.watch_later_outlined,
                         size: 30,
-                        color: Colors.white,
+                        color: Colors.black,
                       ),
                     ),
                   ],

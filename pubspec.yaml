@@ -58,6 +58,7 @@ dependencies:
   animated_text_kit: ^4.2.2
   firebase_core: ^2.25.4
   firebase_messaging: ^14.7.16
+  audioplayers: ^5.2.1
 
 dev_dependencies:
   flutter_test:
@@ -97,6 +98,7 @@ flutter:
      - assets/how_are_you_feeling/Suprised/
      - assets/Coping_icons/
      - assets/Coping_image/
+     - assets/Songs/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -20,7 +20,7 @@ TextEditingController _dateController =TextEditingController();
 class _MyAppoinmentState extends State<MyAppoinment> {
   DateTime? _selectedDate; // The date selected by the user
   final DateFormat _dateFormat = DateFormat('dd / MM / yyyy');
-  TimeOfDay? selectedTimeSlot ;
+  String selectedTimeSlot="" ;
   @override
   Widget build(BuildContext context) {
     final timesForSelectedDate = widget.Details.Slots[_selectedDate] ?? [];
@@ -358,7 +358,7 @@ class _MyAppoinmentState extends State<MyAppoinment> {
                             padding: const EdgeInsets.all(5.0),
                             child: Center(
                               child: Helvetica(text:
-                                timesForSelectedDate[index].format(context) ,
+                                timesForSelectedDate[index],
 
                                     color: selectedTimeSlot == timesForSelectedDate[index]
                                         ? Colors.white
@@ -395,14 +395,31 @@ class _MyAppoinmentState extends State<MyAppoinment> {
                   ),
                 ),
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => const BookAppoinment()),
-                  );
+                  if(_selectedDate ==null ||selectedTimeSlot.isEmpty ){
+                    final snackBar = SnackBar(
+                      backgroundColor: const Color(0xffD3A3F1),
+                      padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                      content: Center(
+                        child:
+                        const Helvetica(
+                            text:'Please Select Date and Time',
+                            color: Colors.black,
+                            size: 16,
+                            weight: FontWeight.normal
+                        ),
+                      ),
+                      duration: Duration(seconds: 1),
+                    );
+                    ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                  }
+                  else
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const BookAppoinment()),
+                    );
                 },
                 child:  const Helvetica(
                   text:'Next',
-
                       color: Colors.black,
                       size: 16,
                       weight: FontWeight.normal
@@ -437,7 +454,7 @@ class _MyAppoinmentState extends State<MyAppoinment> {
       setState(() {
         _dateController.text=_dateFormat.format(_Picked);
         _selectedDate=_Picked;
-        selectedTimeSlot=null;
+        selectedTimeSlot='';
       });
     }
   }

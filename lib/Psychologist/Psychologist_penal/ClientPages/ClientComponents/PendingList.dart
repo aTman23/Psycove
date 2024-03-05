@@ -25,7 +25,9 @@ class _PendingListState extends State<PendingList> {
                     MaterialPageRoute(builder: (context) =>  const ListOfClient())
                 );
               },
-              child: PendingCard(timeSlot: '01:30 am To 02:30 am'));
+              child: PendingCard(
+                timeSlot: '01:30 am To 02:30 am',
+                date: '12:03:24',));
         });
   }
 }

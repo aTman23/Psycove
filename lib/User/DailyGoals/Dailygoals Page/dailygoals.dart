@@ -37,7 +37,7 @@ class _DailyGoalsState extends State<DailyGoals> {
 
                 ),
                 Container(
-                  padding: const EdgeInsets.only(left: 20, top: 15),
+                  padding: const EdgeInsets.only(left: 30, top: 15),
                   height: 100,
                   child:  const Column(
                     children: [
@@ -50,17 +50,19 @@ class _DailyGoalsState extends State<DailyGoals> {
                             "Setting goals is the first step to\naccomplishing anything meaningful",
                         size: 12,
                         weight: FontWeight.w600,
+                        maxlines: 2,
                       ),
                     ],
                   ),
                 ),
                 Container(
+
                   alignment: Alignment.centerRight,
                   width: double.maxFinite,
                   child:  Row(
                     children: [
                       SizedBox(
-                        width: (width * 0.675)>270?width * 0.675:270,
+                        width: (width * 0.675)>270?270:width * 0.675,
                       ),
                       const Image(
                         image: AssetImage("assets/images/dailygoals.png"),

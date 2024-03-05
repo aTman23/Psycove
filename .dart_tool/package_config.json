@@ -26,6 +26,48 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "audioplayers",
+      "rootUri": "file:///C:/Users/kukre/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers-5.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "audioplayers_android",
+      "rootUri": "file:///C:/Users/kukre/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_android-4.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "audioplayers_darwin",
+      "rootUri": "file:///C:/Users/kukre/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_darwin-5.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "audioplayers_linux",
+      "rootUri": "file:///C:/Users/kukre/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_linux-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "audioplayers_platform_interface",
+      "rootUri": "file:///C:/Users/kukre/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_platform_interface-6.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "audioplayers_web",
+      "rootUri": "file:///C:/Users/kukre/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_web-4.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "audioplayers_windows",
+      "rootUri": "file:///C:/Users/kukre/AppData/Local/Pub/Cache/hosted/pub.dev/audioplayers_windows-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///C:/Users/kukre/AppData/Local/Pub/Cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -680,7 +722,7 @@
       "languageVersion": "3.1"
     }
   ],
-  "generated": "2024-03-01T05:26:53.528167Z",
+  "generated": "2024-03-03T12:04:43.406555Z",
   "generator": "pub",
   "generatorVersion": "3.3.0"
 }
